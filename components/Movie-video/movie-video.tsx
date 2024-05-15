@@ -1,6 +1,6 @@
 import { resolve } from "path"
-import { API_URL } from "../../app/(home)/page"
 import style from "./style.module.css"
+import { API_URL } from "../../app/constants"
 const getVideo = async (id: string) => {
     const response = await fetch(`${API_URL}/${id}/videos`)
     return response.json()
